@@ -230,26 +230,32 @@ header .dropdown {
 }
 .age {
   display: flex;
+  flex-direction: row;
   gap: 130px;
 }
 .residence {
   display: flex;
-  gap: 80px;
+  flex-direction: row;
+  gap: 60px;
 }
 .address {
   display: flex;
+  flex-direction: row;
   gap: 80px;
 }
 .email {
   display: flex;
+  flex-direction: row;
   gap: 110px;
 }
 .phone {
   display: flex;
+  flex-direction: row;
   gap: 100px;
 }
 .freelance {
   display: flex;
+  flex-direction: row;
   gap: 60px;
 }
 .footer h1 {
@@ -280,7 +286,7 @@ header .dropdown {
   padding: 10px 20px;
   text-align: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   header {
     display: flex;
     flex-direction: row;
@@ -324,93 +330,135 @@ header .dropdown {
       background-color: #343a394d;
       color: #d1d8d7;
   }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav {
+      display: none;
+  }
+  header .download-logo {
+      display: none;
+  }
+  header .dropdown {
+      position: relative;
+      display: inline-block;
+      padding-right: 40px;
+  }
+  .dropdown:hover .content {
+      display: block;
+  }
+  .dropdown button {
+      background-color: #5f7d78;
+      border: none;
+      cursor: pointer;
+      padding: 5px 10px;
+  }
+  .dropdown .content {
+      display: none;
+      position: absolute;
+      background-color: #5f7d78;
+      min-width: 100px;
+      box-shadow: 6px 6px 12px hsl(0, 0%, 0%);
+  }
+  .dropdown a {
+      text-decoration: none;
+      display: block;
+      color: white;
+      padding: 10px 15px;
+      font-size: 1.5rem;
+  }
+  .dropdown a:hover {
+      background-color: #343a394d;
+      color: #d1d8d7;
+  }
+  .guy-image {
+    display: none;
+  }
+  .section1 .box {
+    display: none;
+  }
+  .hero-section {
+    clip-path: ellipse(90% 80% at 40% 40%);
+  }
+  .about {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+  }
+  .about .container1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about .container1 .wrapper1 {
+    margin-bottom: 30px;
+  }
+  .about .container2 .wrapper2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    padding-left: 5px;
+  }
+  .about.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+  }
+  .p-div {
+    display: flex;
+    justify-content: center;
+  }
+  .about .container2 p {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    font-size: 5.1rem;
+    font-weight: 400;
+    font-family: "Whisper", cursive;
+  }
+  .grid-container, .grid{
+    display: none;
+  }
+  .footer {
+    display: block;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .age {
+    display: flex;
+    gap: 80px;
+  }
+  .residence {
+    display: flex;
+    gap: 20px;
+  }
+  .address {
+    display: flex;
+    gap: 5px;
+  }
+  .email {
+    display: flex;
+    gap: 70px;
+  }
+  .phone {
+    display: flex;
+    gap: 60px;
+  }
+  .freelance {
+    display: flex;
+    gap: 20px;
+  }
+  .info {
+    padding: 12px 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form {
+    border: 3px solid black;
+    border-radius: 27px;
+  }
 }
-@media screen and (max-width: 600px){
-.guy-image {
-  display: none;
-}
-.section1 .box {
-  display: none;
-}
-.hero-section {
-  clip-path: ellipse(90% 80% at 40% 40%);
-}
-.about {
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-bottom: 0px;
-}
-.about .container1 {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.about .container1 .wrapper1 {
-  margin-bottom: 30px;
-}
-.about .container2 .wrapper2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 5px;
-  padding-left: 5px;
-}
-.about.icons {
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-}
-.p-div {
-  display: flex;
-  justify-content: center;
-}
-.about .container2 p {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 60px;
-  font-size: 5.1rem;
-  font-weight: 400;
-  font-family: "Whisper", cursive;
-}
-.grid-container, .grid{
-  display: none;
-}
-.footer {
-  display: block;
-  padding-left: 3px;
-  padding-right: 3px;
-}
-.age {
-  display: flex;
-  gap: 80px;
-}
-.residence {
-  display: flex;
-  gap: 20px;
-}
-.address {
-  display: flex;
-  gap: 5px;
-}
-.email {
-  display: flex;
-  gap: 70px;
-}
-.phone {
-  display: flex;
-  gap: 60px;
-}
-.freelance {
-  display: flex;
-  gap: 20px;
-}
-.info {
-  padding: 12px 10px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.form {
-  border: 3px solid black;
-  border-radius: 27px;
-}
-}
+
