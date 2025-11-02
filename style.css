@@ -398,13 +398,27 @@ header .dropdown {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 5px;
-    padding-left: 5px;
+    gap: 10px;
+    padding-left: 10px;
   }
-  .about.icons {
+  .about .download-logo {
+    gap: 0px;
+  }
+  .about .icons {
     display: flex;
     flex-direction: row;
-    gap: 0px;
+    gap: 5px;
+  }
+  .about .container2 {
+    padding-right: 0px;
+  }
+  .about .container2 .download-logo {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .about .container2 .download-logo img {
+    width: 20px;
+    height: auto;
   }
   .p-div {
     display: flex;
@@ -437,10 +451,12 @@ header .dropdown {
   }
   .address {
     display: flex;
+    flex-direction: column;
     gap: 5px;
   }
   .email {
     display: flex;
+    flex-direction: row;
     gap: 70px;
   }
   .phone {
