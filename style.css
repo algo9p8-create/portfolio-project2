@@ -397,9 +397,9 @@ header .dropdown {
   .about .container2 .wrapper2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-    padding-left: 10px;
+    justify-content: space-evenly;
+    gap: 5px;
+    /*padding-left: 15px;*/
   }
   .about .download-logo {
     gap: 0px;
@@ -407,9 +407,10 @@ header .dropdown {
   .about .icons {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 12px;
   }
-  .about .container2 {
+  .about .container2{
+    display: block;
     padding-right: 0px;
   }
   .about .container2 .download-logo {
@@ -428,7 +429,7 @@ header .dropdown {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 60px;
+    padding-left: 20px;
     font-size: 5.1rem;
     font-weight: 400;
     font-family: "Whisper", cursive;
@@ -470,7 +471,6 @@ header .dropdown {
   .info {
     padding: 12px 10px;
     display: flex;
-    flex-wrap: wrap;
   }
   .form {
     border: 3px solid black;
